@@ -16,70 +16,90 @@
     <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
     
     <style> 
-    img { border-radius : 50% }
+        img { border-radius : 50% }
     </style>
     
 </head>
 <body background="Rainbow.jpg">
-
     <div class="title" style="color:red ; font-size: 26px;"> 
-        <p> ข้อมูลนักศึกษา (STUDENT PROFILE) </p>
+        <p> ข้อมูลนักศึกษาคณะวิทยาการจัดการ </p>
     </div>
 
-    <div class="title" align="center" font-size: 16px;> 
-    <a href="https://www.fms.psu.ac.th" target="_blank"> คณะวิทยาการจัดการ  </a>
+    <div align="center"> 
+        <img src="pic-1.jpg" alt="My Picture" VSPACE="15" width="300" height="300">
     </div>
 
-    <div class="title" style="color:purple; font-size: 20px;"> ข้อมูลทั่วไป </div>
+    <table border="0" align="center" cellspacing="8" cellpadding="8"><tbody><tr><td " style=" border:2px DASHED #000000;background-color: #ffffff"><font size=2>
+    
+    <form>
+    <div class="title" style="color:purple; font-size: 20px;"> ข้อมูลส่วนตัว </div>
+        <div class="title" align="left" font-size: 16px;> 
+            <a href="https://www.fms.psu.ac.th" target="_blank"> คณะวิทยาการจัดการ  </a>
+        </div>
+        <label for="user-name">ชื่อ</label>
+        <input type="text" id="firstname">
+       
+        <label for="user-fname">นามสกุล</label>
+        <input type="text" id="lastname">  &nbsp;
+       
+        <label for="user-name">ชื่อเล่น</label>
+        <input type="text" id="nickname">
     <br>
-    <img src="pic-1.jpg" width="300" height="300">
+        ที่อยู่ : 
+        <label for="user-name">หมู่ที่</label>
+        <input type="text" id="home">
+        
+        <label for="user-name">ซอย</label>
+        <input type="text" id="home" >
+        
+        <label for="user-name">ถนน</label>
+        <input type="text" id="home" >
     <br>
-    ชื่อ : <input type="text" name="firstname" size="13">
+        <label for="user-name">อำเภอ</label>
+        <input type="text" id="home" >
+        
+        <label for="user-name">จังหวัด</label>
+        <input type="text" id="home" >
+        
+        <label for="user-name">รหัสไปรษณีย์</label>
+        <input type="text" id="home" >
     <br>
+        เพศ :    <input type="radio" name="sex" value="male">ชาย 
+        <input type="radio" name="sex" value="female">หญิง 
+
+        วัน-เดือน-ปีเกิด :  <input type="text" name="date" size="13">
     <br>
-    นามสกุล : <input type="text" name="surname" size="13">
+        สัญชาติ : <input type="text" name="nationality" size="13">
+        
+        ศาสนา : <input type="text" name="religion" size="13">
     <br>
+        อีเมล :  <input type="text" name="email" size="13">
+        
+        เบอร์โทรศัพท์ : <input type="text" name="phonenumber" size="13">
     <br>
-    เพศ :  <input type="radio" name="sex" value="male">ชาย 
-    <input type="radio" name="sex" value="female">หญิง 
+        รหัสนักศึกษา :     <input type="text" name="id" size="13">
+        
+        สาขาวิชา :   <select name="type">  
+            <option value="student"> บริหารธุรกิจ </option>
+            <option value="student"> บัญชีบัณฑิต </option>
+            <option value="student"> รัฐประศาสนศาสตรบัณฑิต </option>
+        </select>
+        
+        สาขาวิชาเอก : <select name="type">  
+            <option value="student"> บัญชี </option>
+            <option value="student"> การเงิน </option>
+            <option value="student">  การจัดการภาษาอังกฤษ </option>
+            <option value="student">  การจัดการประชุมนิทรรศการ </option>
+            <option value="student">  ระบบสารสนเทศทางธุรกิจ </option>
+            <option value="student">  โลจิสติกส์ </option>
+            <option value="student">  รัฐประศาสนศาสตร์ </option>
+        </select>
+        <br>
+        <br>
+        <input name="register" type="submit" value="บันทึกข้อมูล">
+        <input name="reset" type="reset" value="ยกเลิก">
+    </form>  
     <br>
-    <br>
-    สัญชาติ : <input type="text" name="nationality" size="13">
-    <br>
-    <br>
-    ศาสนา : <input type="text" name="religion" size="13">
-    <br>
-    <br>
-    วัน-เดือน-ปีเกิด : <input type="text" name="date" size="13">
-    <br>
-    <br>
-    อีเมล : <input type="text" name="email" size="13">
-    <br>
-    <br>
-    รหัสนักศึกษา : <input type="text" name="id" size="13">
-    <br>
-    <br>
-    สาขาวิชา : <select name="type">  
-        <option value="student"> บริหารธุรกิจ </option>
-        <option value="student"> บัญชีบัณฑิต </option>
-        <option value="student"> รัฐประศาสนศาสตรบัณฑิต </option>
-    </select>
-    <br>
-    <br>
-    สาขาวิชาเอก : <select name="type">  
-        <option value="student"> บัญชี </option>
-        <option value="student"> การเงิน </option>
-        <option value="student">  การจัดการภาษาอังกฤษ </option>
-        <option value="student">  การจัดการประชุมนิทรรศการ </option>
-        <option value="student">  ระบบสารสนเทศทางธุรกิจ </option>
-        <option value="student">  โลจิสติกส์ </option>
-        <option value="student">  รัฐประศาสนศาสตร์ </option>
-    </select>
-    <br>
-    <br>
-    <br>
-    <input name="register" type="submit" value="บันทึกข้อมูล">
-    <input name="reset" type="reset" value="ยกเลิก">
-          
+    </td></tr></tbody></table></td></tr></tbody></table>
 </body>
 </html>
