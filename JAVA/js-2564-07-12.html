@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <scrip> 
+        function print_msg() {
+            document.getElementbyID("msg").innerHTML = "Hrllo world";
+        }
+    </scrip>
+
+    <script>
+        function validate_form() {
+            if (document.getElementByID("username").value=='') {
+                alert ("Plese enter user name")
+            }
+        }
+    </script>
+
+</head>
+<body>
+    
+    <button onclick="print_msg();"> Test JS </button>
+
+    <div id="msg"></div>
+
+    <form action="http://fms.psu.ac.th"> 
+        <lab for=""></lab>
+        <input type="text" required>
+        <input type="submit" value="Continue">
+    </form>
+
+    <form action="http://fms.psu.ac.th"> 
+        <lab for=""></lab>
+        <input type="text" id="username" required>
+        <input type="submit" value="Continue">
+    </form> 
+
+</body>
+</html>
