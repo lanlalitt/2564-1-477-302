@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p> Array Example </p>
+    <p id="demo"></p>
+    <script> 
+        var wsays = ["Monday,Tuesday,Wendnday,hursday,Friday"];
+        document.getElementById("demo").innerHTML = "Length =" + wdays.length + "<br>" + "Print all =" + wdays + 
+        "<br>" + "sort =" + wdays.sort() + "<br>";
+        //"find =" + wdays.find("Monday");
+
+
+    </script>
+
+    <script> 
+        var covid_cases = [18500,18000,17500,17000,16500,16000,15500]; 
+        var total_cases = parseInt(covid_cases[0]) + parseInt(covid_cases[1]) + parseInt(covid_cases[2]) + 
+        parseInt(covid_cases[3]) + parseInt(covid_cases[4]) + parseInt(covid_cases[5]) + parseInt(covid_cases[6]);
+        document.getElementById("demo").innerHTML = "Number of cases in 7 days" + covid_cases + 
+        "<br>Total cases in 7 days" + covid_cases;
+    </script>
+
+    <script> 
+        var covid_cases = {seventh:18500, sixth:18000, fifth:17500, fourth:17000, third:16500, second:16000, first:15500}; 
+        var total_cases = parseInt(covid_cases[seventh]) + parseInt(covid_cases[sixth]) + parseInt(covid_cases[fifth]) + 
+        parseInt(covid_cases[fourth]) + parseInt(covid_cases[third]) + parseInt(covid_cases[second]) + parseInt(covid_cases[first]);
+        document.getElementById("demo").innerHTML = "Number of cases in fifth days" + covid_cases["fifth"] + 
+        "<br>Total cases in 7 days" + covid_cases;
+    </script>
+
+
+</script>
+</body>
+</html>
