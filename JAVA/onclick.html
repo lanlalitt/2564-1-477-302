@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="text/javascript">
-        function popup() {
-            alert("Test javascript event handler.")
-        }
-    </script>
-</head>
+<script type="text/javascript">
+    function popup() {
+        alert("Test javascript event handler.")
+    }
+    function showTime() {
+        document.getElementById('shoeTime').innerHTML = Date()
+    }
+</script>
 <body>
     <input type="button" value="click Me!" onclick="popup()"> <br/>
     <a href="#" onmouseover="" onmouseout="popup()"> Hover Me!</a>
     <button  onclick="showTime()" > Check Time </button>
-    <div id="showTime"></div>
+    
+    <div id="showTime">
+        Hello World!
+    </div>
+    
+    <form action="#"  method="GET" onsubmit="" onreset="">
+        <input type="text" name="username" id="username">
+        <input type="submit" value="">
+        <input type="reset" value="">
+    </form>
 </body>
 </html>
