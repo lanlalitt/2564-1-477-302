@@ -45,10 +45,20 @@
         font-family: Arial, Helvetica, sans-serif}
     </style>
 
+
+    <style>
+        dialog {
+            border: 1px;
+            border-radius:6px;
+            box-shadow:0;
+        }
+    </style>
+
+
 </head>
 <body onload="chkUsername()">
 
-
+   
     <image src="logo.jpg" width="10%" height="10%"></image>
     <marquee style="background-color:darksalmon" align="center" size="80" > ยินดีต้อนรับเข้าสู่ LALLA GARDEN (ORGANIC FRUIT) สวนผลไม้ที่การันตีความสด คุณภาพดี ปอดสารเคมี @ผลไม้คุณภาพดี นึกถึง LALLA GARDEN (ORGANIC FRUIT) </marquee>
 
@@ -58,16 +68,36 @@
     <ul class="navigation menu">
         <li><a href=""> หน้าหลัก </a></li>
         <br>
-        <li><a href=""> ข่าวสารและประกาศ </a></li>
-        <br>
         <li><a href=""> ประโยชน์ของผลไม้  </a></li>
         <br>
         <li><a href=""> สั่งซื้อผลไม้  </a></li>
         <br>
-        <li><a href=""> ติดต่อเจ้าหน้าที่ </a></li>
-        <br>
+        <li><a href=""> ติดต่อเจ้าหน้าที่  </a></li>
     </ul>
 
+
+   <div>
+        <dialog id="myFirstDialog">
+            <p><q> ทาง LALLA GARDEN (ORGANIC FRUIT) จะะประชาสัมพันธ์ผ่านช่องทางนี้ค่ะ </q><cite></cite></p>
+            <button id="hide"> Close </button>
+        </dialog>
+        <button id="show"> ประกาศ </button>
+    </div>
+    <script>
+        (function() {
+            var dialog = document.getElementById('myFirstDialog');
+            document.getElementById('show').onclick = function(){
+                dialog.showModal();
+            };
+            document.getElementById('hide').onclick = function() {
+                dialog.close();
+            };
+        })();
+    </script>
+
+
+    <br>
+    <br>
     <div class = "content_left">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995947.3222789915!2d101.55012562794579!3d12.816164268307329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3103760bec547243%3A0xc7d8432079ce1781!2z4LiI4Lix4LiZ4LiX4Lia4Li44Lij4Li1!5e0!3m2!1sth!2sth!4v1631290020167!5m2!1sth!2sth" width="180" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
@@ -78,7 +108,6 @@
     <p><button onclick="saveUsername()" type="button">Save</button>
     <button onclick="delUsername()" type="button">Delete</button></p>
     <div id="result"></div>
-
 
 
     <div class="container" position="right">
